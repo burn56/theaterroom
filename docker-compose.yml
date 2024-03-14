@@ -3,6 +3,8 @@ services:
   plex-web-trigger:
     container_name: Plex-Web-Trigger
     build: .
+    environment:
+      - PLEX_TOKEN=Your_Plex_Auth_Token
     healthcheck:
       test: curl -f http://localhost:4942/ || exit 1
     mem_limit: 256m
@@ -11,4 +13,4 @@ services:
       - no-new-privileges:true
     restart: on-failure:5
     ports:
-      - 4942:5000
+      - 4942:4942
