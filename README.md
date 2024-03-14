@@ -26,8 +26,8 @@
 4. Name your stack (e.g., `plex-web-trigger`).
 5. Copy and paste the content of your `docker-compose.yml` file into the "Web editor" field.
 6. Click "Deploy the stack."
-7. Once the stack is deployed, you can access the Flask app by visiting `http://your-synology-ip:5000/play_movie`.
+7. Once the stack is deployed, you can access the Flask app by visiting `http://your-synology-ip:4942/play_movie`.
 
 ## Configuring Your RFID Token
 
-Configure your RFID token in Hubitat to open the URL `http://your-synology-ip:5000/play_movie` when scanned, which will trigger the movie playback on your Plex server.
+Configure your RFID token in Hubitat to open the URL `http://your-synology-ip:4942/play_movie` when scanned, which will trigger the movie playback on your Plex server.
