@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  plex-web-trigger:
+    container_name: Plex-Web-Trigger
+    build: .
+    healthcheck:
+      test: curl -f http://localhost:4942/ || exit 1
+    mem_limit: 256m
+    cpu_shares: 512
+    security_opt:
+      - no-new-privileges:true
+    restart: on-failure:5
+    ports:
+      - 4942:5000
