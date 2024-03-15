@@ -2,7 +2,9 @@ version: "3.9"
 services:
   plex-web-trigger:
     container_name: Plex-Web-Trigger
-    build: .
+    build:
+      context: https://github.com/burn56/theaterroom.git
+      dockerfile: PlexRfidPlayer/Dockerfile
     environment:
       - PLEX_TOKEN=Your_Plex_Auth_Token
     healthcheck:
