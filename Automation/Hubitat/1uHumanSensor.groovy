@@ -31,6 +31,7 @@
  *  V1.9.0  02-20-2024       Fix for existance time = 1 and changed attribute to number
  *  V2.0.0  02-22-2024       Changed health check method for lower hub resource usage, code cleanup/ bug fixes
  *  V2.0.1  02-25-2024       Bug fix for returned fade time values over 255.
+ *  V2.0.2. 04-07-2024       Added Presence state as returned by the Skreet device
  */
 
 def driverVer() { return "2.0" }
