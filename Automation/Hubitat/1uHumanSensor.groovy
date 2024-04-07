@@ -40,7 +40,7 @@ import hubitat.zigbee.clusters.iaszone.ZoneStatus
 
 metadata
 {
-	definition(name: "Linptech 24Ghz Presence Sensor ES1", namespace: "Gassgs", author: "Krassimir Kossev", importUrl: "https://raw.githubusercontent.com/Gassgs/Hubitat-Apps-and-Drivers/master/Drivers/Linptech%2024Ghz%20Presence%20Sensor%20ES1.groovy", singleThreaded: true )
+	definition(name: "ESP32 Presence Sensor", namespace: "Gassgs", author: "Krassimir Kossev", importUrl: "https://raw.githubusercontent.com/Gassgs/Hubitat-Apps-and-Drivers/master/Drivers/Linptech%2024Ghz%20Presence%20Sensor%20ES1.groovy", singleThreaded: true )
 	{
 		capability "Motion Sensor"
 		capability "IlluminanceMeasurement"
