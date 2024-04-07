@@ -48,7 +48,7 @@ metadata
 		capability "Configuration"
 		capability "Refresh"
 		capability "Sensor"
-        capability "Presence Sensor"
+       capability "Presence Sensor"
 		
 		command "setMotionSensitivity", [[name:"Set Motion Sensitivity", type: "ENUM",description: "Motion Detection Sensitivity", constraints: ["low","medium-low","medium","medium-high","high"],defaultValue: "high"]]
 		command "setStaticSensitivity", [[name:"Set Static Sensitivity", type: "ENUM",description: "Static Detection Sensitivity", constraints: ["low","medium-low","medium","medium-high","high"],defaultValue: "high"]]
@@ -62,7 +62,7 @@ metadata
 		attribute "existanceTime", "number"
 		attribute "fadeTime", "number"
 		attribute "healthStatus", "string"
-        attribute "presence", "string"
+       attribute "presence", "string"
 
 	fingerprint inClusters: "0000,0003,0004,0005,E002,4000,EF00,0500", outClusters: "0019,000A", manufacturer: "_TZ3218_awarhusb", model: "TS0225", deviceJoinName: "LINPTECH 24Ghz Human Presence Detector"
 	}
